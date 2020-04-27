@@ -42,7 +42,6 @@ function collectAnalyserData(analyser) {
   // Uint8Array should be the same length as the frequencyBinCount
   const dataArray = new Uint8Array(analyser.frequencyBinCount)
   analyser.getByteFrequencyData(dataArray)
-  console.log("Working with a frequency bin range of ", dataArray)
 
   const frequencyBinRange = analyser.context.sampleRate / analyser.fftSize
 
